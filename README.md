@@ -1,4 +1,4 @@
-#Multivariate Linear Regression with Gradient Descent from Scratch using Python
+# Multivariate Linear Regression with Gradient Descent from Scratch using Python
 
 
 If you are here already, you already know what linear regression is and only care about implementation. So, lets run down ASAP.
