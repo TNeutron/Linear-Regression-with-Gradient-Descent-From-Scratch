@@ -46,7 +46,7 @@ $$
 H(\theta) = \theta_0 + \theta_1X_1 + \theta_2X_2 + ... + \theta_n*X_n
 $$
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0663fd79-2654-44f0-b6c8-185271311dca/47b5c288-1637-4b93-ba0c-1745545ce41e/Untitled.png)
+![Untitled](./Assets/1.png)
 
 In code - 
 
@@ -60,7 +60,7 @@ H_func = theta_0 + np.dot(self.training_x, W[0])
 
 1. Calculate the sum of error using an appropriate cost function, Mean Square Error in this case.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0663fd79-2654-44f0-b6c8-185271311dca/f8e67583-1e7e-4ed3-a527-1ba95e769902/Untitled.png)
+![Untitled](./Assets/2.png)
 
 EQ - 
 
@@ -81,7 +81,7 @@ $$
 j = np.sum(((H_func - np.array(train_y) )**2.0)) / (m)
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0663fd79-2654-44f0-b6c8-185271311dca/0ffd9376-1ff8-4590-9ea6-b20b38adac01/Untitled.png)
+![Untitled](./Assets/3.png)
 
 1. Find Gradients for each weight by differentiating the cost function with each weight -
 
@@ -127,3 +127,19 @@ self.theta_0 = theta_0
 ## Repeating these 4 steps, for enough times will result in the most optimal values of the weights and bias values by minimizing cost/error in the process until things “stabilize”.
 
 Plotting the cost over number of iteration give us cost function.
+
+----
+
+
+## Example Project on  Parkinsons Telemonitoring dataset 
+The attached notebook implements Linear regression on Parkinsons Telemonitoring.
+
+Further details about the biomedical voice measures can be found in:
+```
+Max A. Little, Patrick E. McSharry, Eric J. Hunter, Lorraine O. Ramig (2009), 
+'Suitability of dysphonia measurements for telemonitoring of Parkinson's disease', 
+IEEE Transactions on Biomedical Engineering, 56(4):1015-1022
+```
+
+It is a collection of different biomedical measurements where higher motor_UPDRS value mean - higher chances of parkinson's disease. 
+
